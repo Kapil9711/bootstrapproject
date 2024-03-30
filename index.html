@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./android-chrome-192x192.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .complex-grid h1 {
+        font-size: 0.7rem;
+      }
+      @media (min-width: 999px) {
+        .complex-grid h1 {
+          font-size: 1.5rem;
+        }
+        .complex-grid {
+          margin-left: 80px;
+        }
+      }
+    </style>
+    <title>Bootstrap Project</title>
+  </head>
+  <body>
+    <header id="header">
+      <!-- ==========
+        Navbar stated
+        ========== -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Complex UI</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Section1</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Section2</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Section3
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ==========
+        Navbar ended
+        ========== -->
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1578351709253-928714cb0595?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>First slide Title</h5>
+              <p>First Slide Description</p>
+              <button type="button" class="btn btn-primary">
+                Call to Action
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1460472178825-e5240623afd5?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Second slide Title</h5>
+              <p>Second slide Description</p>
+              <button type="button" class="btn btn-primary">
+                Call to Action
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1680582107403-04dfac02efc3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Third slide Title</h5>
+              <p>Third slide Description</p>
+              <button type="button" class="btn btn-primary">
+                Call to Action
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="short-description mt-4">
+        <div class="container text-center">
+          <div class="row justify-content-around">
+            <div
+              style="width: 300px; height: 200px; background-color: lightgray"
+              class="col-sm-12 col-md-6 col-lg-4 mt-4"
+            >
+              <h1
+                style="
+                  position: relative;
+                  top: 30%;
+                  color: hsl(0 0% 65%);
+                  font-size: 3rem;
+                "
+              >
+                300 x 200
+              </h1>
+            </div>
+
+            <div
+              style="width: 300px; height: 200px; background-color: lightgray"
+              class="col-sm-12 col-md-6 col-lg-4 mt-4"
+            >
+              <h1
+                style="
+                  position: relative;
+                  top: 30%;
+                  color: hsl(0 0% 65%);
+                  font-size: 3rem;
+                "
+              >
+                300 x 200
+              </h1>
+            </div>
+            <div
+              style="width: 300px; height: 200px; background-color: lightgray"
+              class="col-sm-12 col-md-6 col-lg-4 mt-4"
+            >
+              <h1
+                style="
+                  position: relative;
+                  top: 30%;
+                  color: hsl(0 0% 65%);
+                  font-size: 3rem;
+                "
+              >
+                300 x 200
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="complex-grid mt-5">
+        <div class="container text-center">
+          <div style="height: 300px" class="row justify-content-around">
+            <div
+              style="background-color: lightgrey"
+              class="col-4 alert alert-primary"
+            >
+              <h1 style="position: relative; top: 40%; color: hsl(0 0% 65%)">
+                300 x 200
+              </h1>
+            </div>
+            <div class="col-7">
+              <div style="height: 300px" class="row">
+                <div
+                  style="background-color: lightgrey"
+                  class="col-2 alert alert-primary"
+                >
+                  <h1
+                    style="position: relative; top: 40%; color: hsl(0 0% 65%)"
+                  >
+                    300 x 200
+                  </h1>
+                </div>
+                <div
+                  style="background-color: lightgrey"
+                  class="col-2 alert alert-primary ms-3"
+                >
+                  <h1
+                    style="position: relative; top: 40%; color: hsl(0 0% 65%)"
+                  >
+                    300 x 200
+                  </h1>
+                </div>
+                <div
+                  style="background-color: lightgrey"
+                  class="col-6 alert alert-primary ms-3"
+                >
+                  <h1
+                    style="position: relative; top: 30%; color: hsl(0 0% 65%)"
+                  >
+                    300 x 200
+                  </h1>
+                </div>
+
+                <div
+                  style="background-color: lightgrey"
+                  class="col-2 alert alert-primary"
+                >
+                  <h1
+                    style="position: relative; top: 40%; color: hsl(0 0% 65%)"
+                  >
+                    300 x 200
+                  </h1>
+                </div>
+                <div
+                  style="background-color: lightgrey"
+                  class="col-2 alert alert-primary ms-3"
+                >
+                  <h1
+                    style="position: relative; top: 40%; color: hsl(0 0% 65%)"
+                  >
+                    300 x 200
+                  </h1>
+                </div>
+                <div
+                  style="background-color: lightgrey"
+                  class="col-6 alert alert-primary ms-3"
+                >
+                  <h1
+                    style="position: relative; top: 30%; color: hsl(0 0% 65%)"
+                  >
+                    300 x 200
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="height: 300px" class="row justify-content-around">
+            <div
+              style="background-color: lightgrey"
+              class="col-4 alert alert-primary"
+            >
+              <h1 style="position: relative; top: 40%; color: hsl(0 0% 65%)">
+                300 x 200
+              </h1>
+            </div>
+            <div
+              style="padding: 0; color: transparent"
+              class="ms-2 col-7 alert"
+            >
+              <div
+                style="
+                  border-radius: 10px;
+                  width: 89%;
+                  height: 100%;
+                  background-color: lightgrey;
+                "
+              >
+                <h1 style="position: relative; top: 40%; color: hsl(0 0% 65%)">
+                  300 x 200
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-5">
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col-md-4 mb-4 justify-content-center">
+              <div class="card" style="max-width: 330px; margin: 0 auto">
+                <img
+                  style="height: 200px"
+                  src="https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Card Description</p>
+                  <a href="#" class="btn btn-primary">Call to Action</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card" style="max-width: 330px; margin: 0 auto">
+                <img
+                  style="height: 200px"
+                  src="https://images.unsplash.com/photo-1554435493-93422e8220c8?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Card Description</p>
+                  <a href="#" class="btn btn-primary">Call to Action</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card" style="max-width: 330px; margin: 0 auto">
+                <img
+                  style="height: 200px"
+                  src="https://plus.unsplash.com/premium_photo-1680157072705-bb7f72ab1aa0?q=80&w=1954&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Card Description</p>
+                  <a href="#" class="btn btn-primary">Call to Action</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        class="mt-5"
+        style="background-color: hsl(0 0% 95%); padding: 24px 0"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div style="max-width: 330px; margin: 0 auto">
+                <h2>Useful Links</h2>
+                <ul>
+                  <li><a href="#">Link1</a></li>
+                  <li><a href="#">Link2</a></li>
+                  <li><a href="#">Link3</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div style="max-width: 330px; margin: 0 auto">
+                <h2>More Links</h2>
+                <ul>
+                  <li><a href="#">Link4</a></li>
+                  <li><a href="#">Link5</a></li>
+                  <li><a href="#">Link6</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div style="max-width: 330px; margin: 0 auto">
+                <h2>Contact Us</h2>
+                <p>Email:example@example.com</p>
+                <p>Phone: +1(555) 123-4567</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>&copy; 2023 Complex Ui. All Rights Reversed</h4>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+              <button type="button" class="btn btn-primary">
+                <a style="color: white; text-decoration: none" href="#header"
+                  >Back to Top</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <div style="display: flex; justify-content: space-between" class="mt-3">
+          <h4>&copy; 2023 Complex Ui. All Rights Reversed</h4>
+          <button type="button" class="btn btn-primary">Back to Top</button>
+        </div> -->
+      </footer>
+    </main>
+  </body>
+</html>
